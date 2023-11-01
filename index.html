@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Café</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
+    <!--Estilos CSS-->
+    <style>
+        /* Estilo para el footer */
+        .footer {
+            background-color: #fff;
+            color: #000000;
+            padding: 60px;
+            margin-top: auto;
+        }
+
+        /* Estilo para las columnas en el footer */
+        .footer-column {
+            width: 25%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para los títulos en las columnas */
+        .footer-title {
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+    </style>
+    </head>
+<body>
+    <!--Javascript bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--Página web-->
+    <header>
+        <h1>Delicious Café</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2> <u>Bienvenidos a Delicious Café</u></h2>
+        <p>Servimos el mejor café en la ciudad.</p>
+    </section>
+
+    <section id="menu">
+        <h2><u>Menú</u></h2>
+        <ul>
+            <li>Café Latte</li>
+            <li>Expresso Doble</li>
+            <li>Capuchino</li>
+        </ul>
+
+        <!--Carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <!--Indicadores de diapositivas-->
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <!--Diapositivas del carrusel-->
+                <div class="carousel-item active d-item">
+                    <img src="/img/Cafe-Latte-Coffee.jpg" class="img-01" alt="Cafe Latte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Café Latte</h5>
+                        <p>Lleva una o dos medidas de expresso, leche vaporizada y una fina capa de espuma de leche.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/expresso-doble-cortado.jpg" class="img-02" alt="Expresso Doble">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Expresso Doble</h5>
+                        <p> Equivale a 2 medidas de Expresso y 128 mg de cafeína.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Capuchino.jpg" class="img-03" alt="Capuchino">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Capuchino</h5>
+                        <p>Contiene expreso, vapor y espuma de leche a partes iguales.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Botones de control del carrusel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2> <u>Contacto</u></h2>
+        <p>¡Estamos ubicados en el corazón de la ciudad!</p>
+        <p>Visítanos en Laprida 2015, CABA</p>
+
+        <!--IFrame del mapa de Google-->
+        <div class="mapa"><iframe iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52536.23258893889!2d-58.45954202055663!3d-34.616435444615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9eaceb7157%3A0xbcfc8dbbd6951cae!2sDelicious%20Caf%C3%A9!5e0!3m2!1ses-419!2sar!4v1698716546530!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+   
+    </body>
+
+    <footer>
+        <div class="footer-column">
+            <div class="footer-title">Sobre nosotros</div>
+            <p>Nuestra historia</p>
+            <p>Nuesta misión</p>
+            <p>Nuesta cultura inclusiva y valores</p>
+            <p>Nuestro café</p>
+            <p>Historias y novedades</p>
+            <p>Trabaja con nosotros</p>
+        </div>
+
+
+        <div class="footer-column">
+            <div class="footer-title">Impacto social</div>
+            <p>Descubre cómo contribuimos a la sociedad.</p>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-title">Atención al cliente</div>
+            <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">Defensa de las y los
+                consumidores</a>
+        </div>
+        <div class="footer-column">
+            <div class="footer-title">Experiencia Deliciosa</div>
+            <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/delicious-53e58aab-6a38-425f-a7d1-db07a97b12ae-menu?utm_source=google&utm_medium=organic&utm_campaign=google_reserve_place_order_action"
+                target="_blank">Delivery</a>
+        </div>
+    </footer>
+
+   
+</html>
